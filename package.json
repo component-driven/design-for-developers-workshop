@@ -1,0 +1,20 @@
+{
+  "name": "design-for-developers-workshop",
+  "version": "0.0.0-development",
+  "description": "Slides and exercises for the \"Design for Developers\" workshop",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/component-driven/design-for-developers-workshop.git"
+  },
+  "keywords": [],
+  "author": "Andrey Okonetchnikov <andrey@okonet.ru>",
+  "license": "(GPL-3.0 OR CC BY-NC 4.0)",
+  "bugs": {
+    "url": "https://github.com/component-driven/design-for-developers-workshop/issues"
+  },
+  "homepage": "https://github.com/component-driven/design-for-developers-workshop#readme"
+}
