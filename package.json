@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "mdx-deck src/index.mdx",
-    "generate": "split-guide generate"
+    "generate": "split-guide generate",
+    "browsersync": "browser-sync start --server \"./exercises-final/exercise-01\" --files \"templates/**/*.css\"",
+    "server": "./scripts/server.js"
   },
   "repository": {
     "type": "git",
@@ -23,6 +25,13 @@
     "mdx-deck": "^2.3.2"
   },
   "devDependencies": {
+    "browser-sync": "^2.26.5",
+    "husky": "^2.2.0",
     "split-guide": "^3.0.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run generate && git add ."
+    }
   }
 }

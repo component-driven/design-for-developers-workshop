@@ -18,6 +18,6 @@ const CodeSandbox = styled.div({
 })
 
 export default props => <CodeSandbox {...props}>
-    <iframe src="https://codesandbox.io/embed/new"
+    <iframe src="https://codesandbox.io/embed/github/component-driven/design-for-developers-workshop/tree/master/exercises-final/exercise-01"
             sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"/>
 </CodeSandbox>
