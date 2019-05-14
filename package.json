@@ -5,10 +5,12 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "posttest": "npm run format",
     "start": "mdx-deck src/index.mdx",
     "generate": "split-guide generate",
     "browsersync": "browser-sync start --server \"./exercises-final/exercise-01\" --files \"templates/**/*.css\"",
-    "server": "./scripts/server.js"
+    "server": "./scripts/server.js",
+    "format": "prettier --write \"**/*.{js,css,md}\""
   },
   "repository": {
     "type": "git",
@@ -27,11 +29,19 @@
   "devDependencies": {
     "browser-sync": "^2.26.5",
     "husky": "^2.2.0",
+    "lint-staged": ">=8",
+    "prettier": "^1.17.1",
     "split-guide": "^3.0.0"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run generate && git add ."
+      "pre-commit": "lint-staged"
     }
+  },
+  "lint-staged": {
+    "*.{js,css,mdx?}": [
+      "prettier --write",
+      "git add"
+    ]
   }
 }
