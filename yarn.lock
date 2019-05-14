@@ -6462,12 +6462,11 @@ spdx-license-ids@^3.0.0:
   resolved "https://registry.yarnpkg.com/spdx-license-ids/-/spdx-license-ids-3.0.4.tgz#75ecd1a88de8c184ef015eafb51b5b48bfd11bb1"
   integrity sha512-7j8LYJLeY/Yb6ACbQ7F76qy5jHkp0U6jgBfJsk97bwWlVUnUWsAgpyaCvo17h0/RQGnQ036tVDomiwoI4pDkQA==
 
-split-guide@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/split-guide/-/split-guide-3.0.0.tgz#dbc2d98e0a9a2789bc6c63ce1b0de3acc3342bab"
-  integrity sha1-28LZjgqaJ4m8bGPOGw3jrMM0K6s=
+split-guide@component-driven/split-guide#feat-css-syntax:
+  version "0.0.0-semantically-released"
+  resolved "https://codeload.github.com/component-driven/split-guide/tar.gz/e2ad23f1287736eb7de101c8ba9ba5b62a7504ac"
   dependencies:
-    chalk "^1.1.3"
+    chalk "^2.1.0"
     common-tags "^1.4.0"
     glob "^7.0.6"
     mkdirp "^0.5.1"

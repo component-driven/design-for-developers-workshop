@@ -1,17 +1,32 @@
-/* Normalize box model */
-// WORKSHOP_START
-
+/* WORKSHOP_START*/
 /* Add your CSS here */
-// WORKSHOP_END
-// FINAL_START
+/* WORKSHOP_END*/
+/* FINAL_START*/
 html {
-   box-sizing: border-box;
+  box-sizing: border-box;
 }
-*, *:before, *:after {
-    box-sizing: inherit;
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+/*FINAL_END*/
+
+.parent {
+  float: left;
+  width: 50%;
+  border: 2px solid lightblue;
 }
 
-body {
-    font-family: sans-serif;
+.full-width {
+  padding: 20%;
+  width: 100%;
+  border: 5px solid cornflowerblue;
 }
-// FINAL_END
+
+.half-width {
+  float: left;
+  padding: 1em;
+  width: 50%;
+  border: 3px dotted darkgreen;
+}

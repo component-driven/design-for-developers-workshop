@@ -31,7 +31,7 @@
     "husky": "^2.2.0",
     "lint-staged": ">=8",
     "prettier": "^1.17.1",
-    "split-guide": "^3.0.0"
+    "split-guide": "component-driven/split-guide#feat-css-syntax"
   },
   "husky": {
     "hooks": {
