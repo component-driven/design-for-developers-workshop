@@ -4,7 +4,9 @@
   "description": "Slides and exercises for the \"Design for Developers\" workshop",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "mdx-deck src/index.mdx",
+    "generate": "split-guide generate"
   },
   "repository": {
     "type": "git",
@@ -16,5 +18,11 @@
   "bugs": {
     "url": "https://github.com/component-driven/design-for-developers-workshop/issues"
   },
-  "homepage": "https://github.com/component-driven/design-for-developers-workshop#readme"
+  "homepage": "https://github.com/component-driven/design-for-developers-workshop#readme",
+  "dependencies": {
+    "mdx-deck": "^2.3.2"
+  },
+  "devDependencies": {
+    "split-guide": "^3.0.0"
+  }
 }

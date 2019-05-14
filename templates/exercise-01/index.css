@@ -1,0 +1,13 @@
+/* Normalize box model */
+// WORKSHOP_START
+
+/* Add your CSS here */
+// WORKSHOP_END
+// FINAL_START
+html {
+   box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+// FINAL_END
