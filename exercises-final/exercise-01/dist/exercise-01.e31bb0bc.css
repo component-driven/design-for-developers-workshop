@@ -1,0 +1,29 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.parent {
+  float: left;
+  width: 50%;
+  border: 2px solid lightblue;
+}
+
+.full-width {
+  padding: 20%;
+  width: 100%;
+  border: 5px solid cornflowerblue;
+}
+
+.half-width {
+  float: left;
+  padding: 1em;
+  width: 50%;
+  border: 3px dotted darkgreen;
+}
+
+/*# sourceMappingURL=/exercise-01.e31bb0bc.css.map */

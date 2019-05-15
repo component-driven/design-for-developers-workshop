@@ -2,11 +2,16 @@
   "name": "exercise-01",
   "version": "0.0.0-development",
   "description": "",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "parcel index.html --open",
+    "build": "parcel build index.html"
   },
-  "keywords": [],
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "7.2.0",
+    "parcel-bundler": "^1.6.1"
+  },
   "author": "Andrey Okonetchnikov <andrey@okonet.ru>",
   "license": "MIT"
 }
