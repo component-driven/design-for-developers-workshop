@@ -2,20 +2,17 @@
 /* Add your CSS here */
 /* WORKSHOP_END*/
 /* FINAL_START*/
-html {
-  box-sizing: border-box;
-}
 *,
 *:before,
 *:after {
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 /*FINAL_END*/
 
 .parent {
   float: left;
   width: 50%;
-  border: 2px solid lightblue;
+  border: 5px solid lightblue;
 }
 
 .full-width {
@@ -24,9 +21,29 @@ html {
   border: 5px solid cornflowerblue;
 }
 
+.child {
+  padding: 20px;
+  width: 100%;
+  border: 5px solid #000;
+}
+
+.child::before,
+.child::after {
+  display: block;
+  padding: 10px;
+  width: 100%;
+  border: 5px solid deepskyblue;
+}
+.child::before {
+  content: "::before";
+}
+.child::after {
+  content: "::after";
+}
+
 .half-width {
   float: left;
   padding: 1em;
   width: 50%;
-  border: 3px dotted darkgreen;
+  border: 5px dashed darkslateblue;
 }
