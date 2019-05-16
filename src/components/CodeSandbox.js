@@ -19,7 +19,7 @@ const CodeSandbox = styled.div({
 export default ({ exercise, final, ...rest }) => {
   const url = `component-driven/design-for-developers-workshop/tree/master/exercises${
     final ? "-final" : ""
-  }/${exercise}?view=split&verticallayout=0&module=Readme.md`
+  }/${exercise}?view=split&verticallayout=0&module=index.css`
   return (
     <CodeSandbox {...rest}>
       <iframe
